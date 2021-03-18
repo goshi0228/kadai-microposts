@@ -6,10 +6,7 @@
     </button>
     
   <% if logged_in? %>
-    <%= link_to "Favorites",likes_user_path(current_user) , class: "navbar-brand" %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <%= link_to "Favorites",likes_user_path(current_user) , class: "nav-link" %>
   <% end %>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
